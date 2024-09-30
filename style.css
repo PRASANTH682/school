@@ -1,0 +1,232 @@
+/*----------------comman css-------------------*/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Poppins', sans-serif;
+}
+p{
+    font-size: 1.2rem;
+}
+
+
+/*----------------header css-------------------*/
+header{
+    position: relative;
+}
+header nav{
+    padding-top: 1rem;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    margin-left: 2rem;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    margin:0 auto;
+}
+nav ul li{
+    margin-left: 1rem;
+}
+nav ul a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius:20px;
+    transition: 0.3s;
+}
+ul li .active,ul li a:hover{
+    background-color: #f0390f;
+    color: #fff;
+}
+nav .menu{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
+    display: none;
+}
+.header-content-container{
+    display: flex;
+    justify-content: space-around;
+}
+.header-content{
+    width: 25%;
+    margin: 7.5rem 0 0 3rem;
+}
+.header-content img{
+    margin-bottom: 1.5rem;
+}
+.header-content h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.header-img{
+    width: 55%;
+}
+
+/*---------------MAIN CSS ----------------*/
+.skating-top-content{
+    margin: 4rem 0 3rem 0;
+    text-align: center;
+}
+.skating-top-content h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.8;
+}
+.skating-top-content p{
+    font-size: 1.15rem;
+}
+.skateboard-container{
+    margin: 0 8rem;
+    display: flex;
+    gap: 1.5rem;
+}
+.skateboard{
+    padding: 2rem 2.5rem 4rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+}
+.skateboard img{
+    margin: 0 auto;
+}
+.skateboard h1{
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    font-weight: 750;
+}
+.skateboard p{
+    font-size: 1.2rem;
+}
+.skateboard-cls h4{
+    padding: 3rem 0;
+    text-transform: uppercase;
+    font-weight: 800;
+    cursor: pointer;
+}
+.skateboard-2{
+    background-color:#3e0bce ;
+}
+.skateboard-1,.skateboard-3{
+    background-color: #f0390f;
+}
+
+/*-------------FOOTER CSS ----------------*/
+footer{
+    background: url(img/about_bg.jpg) center/cover no-repeat;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 5rem 1rem 0 9rem;
+    margin-top: 1rem;
+}
+.about-content{
+    width: 70%;
+    padding-right: 10px;
+
+}
+.about-content h1{
+    font-size: 2.3rem;
+    width: 40%;
+    margin: 4.5rem 0 1rem 0;
+}
+.about-content p{
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+.about-img img{
+    width: 91.50%;
+}
+.about-img {
+    padding-left: 10px;
+}
+
+/* -------------- RESPONIVE CSS --------------------*/
+@media screen and (max-width:850px) {
+    nav ul{
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        top:45px;
+        right:25px;
+        width: 270px;
+        padding: 5px 0 0 0 ;
+        background:gray;
+        border-bottom-left-radius: 5px;
+        transition: 0.3s;
+    }
+    nav ul li{
+        padding: 10px 0px;
+        }
+    nav .menu{
+        display: block;
+    }
+    .logo{
+        margin-top: -15px;
+    }
+    .logo img{
+        width: 70%;  
+    }
+    .showmenu{
+        display: block;
+    }
+    .header-content-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+    .header-content{
+        margin: 1rem 0 2rem 0;
+        width: 50%;
+    }
+    .header-img{
+        width: 100%;
+    }
+    .skateboard-container{
+        flex-direction:column;
+        width: 98%;
+        margin:0 10px;
+    }
+    .skateboard-cls h4{
+        padding: 1rem 0;
+        text-align: center;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+    .about-content h1,p{
+        width: 100%;
+    }
+
+}
+@media screen and (min-width:719px) and (max-width:997px) {
+    .header-content{
+        width: 30%;
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+    .about-content h1,p{
+        width: 100%;
+    }
+}

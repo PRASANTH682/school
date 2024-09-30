@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skating">Skating</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+                <div class="menu">
+                    <img src="img/menu.svg" alt="menu-icon">
+                </div>
+        </nav>
+        <section class="header-content-container" id="home">
+            <div class="header-content">
+                <img src="img/top_icon.png" alt="top-icon">
+                <h1>Skating Board School</h1>
+            </div>
+            <div class="header-img">
+                <img src="img/banner_img.png" alt="banner">
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="skating-top-content" id="skating">
+            <div class="top-content">
+                <h1>Our Skating Class</h1>
+                <p>There are many variation of passages of Lorem</p>
+            </div>
+        </section>
+            <section class="skateboard-container">
+                <section class="skateboard-cls">
+                    <section class="skateboard-1 skateboard">
+                        <img src="img/class1.png" alt="runimage">
+                        <h1>Skateboard</h1>
+                        <p>There are many variations of passages of Lorem Ipsum available,but the majarity have suffered alteration There are many variations</p>
+                    </section>
+                    <h4>read more</h4>
+                </section>
+                <section class="skateboard-cls">
+                    <section class="skateboard-2 skateboard">
+                        <img src="img/class2.png" alt="runimage">
+                        <h1>Skateboard</h1>
+                        <p>There are many variations of passages of Lorem Ipsum available,but the majarity have suffered alteration There are many variations</p>
+                    </section>
+                    <h4>read more</h4>                </section>
+                <section class="skateboard-cls">
+                    <section class="skateboard-3 skateboard">
+                        <img src="img/class3.png" alt="runimage">
+                        <h1>Skateboard</h1>
+                        <p>There are many variations of passages of Lorem Ipsum available,but the majarity have suffered alteration There are many variations</p>
+                    </section>
+                    <h4>read more</h4>
+                </section>
+            </section>
+    </main>
+    <footer>
+        <section class="about-content" id="about">
+            <h1>About Skating school</h1>
+            <p>There are many variations of passages of Lorem Ipsum available,but the majarity have suffered alteration There are many variations There are many variations of passages of Lorem Ipsum available,but the majarity have suffered alteration There are many variations</p>
+        </section>
+        <section class="about-img">
+            <img src="img/about.png" alt="aboutimg">
+        </section>
+    </footer>
+
+
+
+    <script>
+        const menu = document.querySelector(".menu");
+        const menuList = document.querySelector("nav ul");
+        menu.addEventListener('click',() => {
+            menuList.classList.toggle('showmenu');
+        })
+    </script>
+</body>
+</html>
